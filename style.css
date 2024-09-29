@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    background-color: aliceblue;
+}
+
+#bento-container{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(10, 100px);
+    height: 800px;
+    width:  800px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+.ctn{
+    border-radius: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    margin: 15px 15px;
+}
+
+#ctn1{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: hsl(31, 66%, 93%);
+    
+    #ctn1-text{
+        margin: 50px 10px 50px 30px;
+    
+        letter-spacing: -3px;
+        line-height: 45px;
+
+        font-weight: 500;
+        font-size: 35pt;
+    
+        i{
+            color: hsl(256, 67%, 59%);
+        }
+    }
+
+    img{
+        transform: scale(0.45);
+        align-self: center; 
+        position: relative;
+        bottom: 80px;
+        right: 20px;
+      }
+      
+}
+
+#ctn2{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    background-color:hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: column;
+
+    #ctn2-text{
+        margin: 50px 30px 30px 20px ;
+        text-align: center;
+
+        font-weight: 500;
+        font-size: 45pt;
+        color:hsl(0, 0%, 100%);
+
+        line-height: 60px;
+
+        #clr2{
+            color:hsl(39, 100%, 71%); 
+        }
+    }
+
+    img{
+        transform: scale(0.3);
+        max-height: 100%;
+        position: relative;
+        bottom: 50px;
+    }
+
+    #ctn2-ln2{
+        font-weight: 200;
+        font-size: 12pt;
+        color:hsl(0, 0%, 100%);
+        align-self: center;
+        position: relative;
+        bottom: 80px;
+    }
+}
+
+#ctn3{
+    grid-column: 4/5;
+    grid-row: 1/7;
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    #ctn3-text{
+        font-weight: 600;
+        font-size: 20pt;
+        line-height: 30px;
+        letter-spacing: -1px;
+        margin: 40px 40px 20px 30px;
+    }
+
+    img{
+        position: relative;
+        transform: scale(1.3);
+        left: 90px;
+        top: 30px;
+    }
+
+    #ctn3-text2{
+        position: relative;
+        top: 60px;
+        margin: 30px 18px 30px 30px;
+    }
+}
+
+#ctn4{
+    grid-column: 1/2;
+    grid-row: 5/10;
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    flex-direction: column;
+
+    #ctn4-text{
+        margin: 50px 10px 50px 30px;
+    
+        letter-spacing: -3px;
+        line-height: 45px;
+
+        font-weight: 500;
+        font-size: 35pt;
+    }
+
+    img{
+        transform: scale(0.5);
+        position: relative;
+        bottom: 120px;
+        align-self: center;
+    }
+}
+
+#ctn5{
+    grid-column: 2/3;
+    grid-row: 4/7;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    img{
+        margin: 20px 0px 0px 20px;
+        transform: scale(1.2);
+        position: relative;
+        left: 30px;
+    }
+
+    #ctn5-text{
+        font-weight: 600;
+        font-size: 25pt;
+        
+        position: relative;
+        top: 50px;
+        margin: 0px 40px 10px 30px;
+
+        letter-spacing: -1px;
+        line-height: 28px;
+    }
+}
+
+#ctn6{
+    grid-column: 3/4;
+    grid-row: 4/7;
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    #ctn6-text{
+        font-weight: 600;
+        font-size: 25pt;
+        letter-spacing: -1px;
+        line-height: 28px;
+        margin: 30px 40px 10px 30px;
+    }
+
+    img{
+        transform: scale(0.85);
+    }
+}
+
+#ctn7{
+    grid-column: 2/3;
+    grid-row: 7/10;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    #ctn7-text{
+        align-self: self-start;
+        font-weight: 600;
+        font-size: 45pt;
+        letter-spacing: -1px;
+        line-height: 28px;
+        margin: 40px 40px 10px 40px;
+    }
+
+    #ctn7-text2{
+        margin: 20px 10px 10px 10px;
+        font-weight: 400;
+        font-size: 16pt;
+    }
+
+    img{
+        transform: scale(0.6);
+    }
+}
+
+#ctn8{
+    grid-column: 3/5;
+    grid-row: 7/10;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+
+    img{
+        transform: scale(0.8);
+    }
+
+    #ctn8-text{
+        margin: 0px 10px 0px 0px;
+        font-weight: 500;
+        font-size: 30pt;
+        align-self: center;
+        color: hsl(0, 0%, 100%);
+        line-height: 35px;
+        position: relative;
+        right: 20px;
+    }
+}   
